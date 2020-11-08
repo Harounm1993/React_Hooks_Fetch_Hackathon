@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Display from "../display";
 import Input from "../Input/index";
+import cs from "classnames";
 
 const api = {
   key: "64fb852b810905d928c26726c873e75f",
@@ -30,15 +31,20 @@ function App() {
   }, [query]);
 
   return (
-    <div
-      className={
-        weather !== null ? (weather.main.temp > 16 ? "app warm" : "app") : "app"
-      }
-    >
-      <main>
+    <div className="app">
+      <div
+        className={cs("overlay", {
+          clear: weather?.weather[0].main === "Clear",
+          rain: weather?.weather[0].main === "Rain",
+          snow: weather?.weather[0].main === "Snow",
+          clouds: weather?.weather[0].main === "Clouds",
+        })}
+      ></div>
+      <div className="shadow"></div>
+      <main className="content">
         <Input setQuery={setQuery} />
-        {weather !== null && <Display weather={weather} />}
       </main>
+      {weather !== null && <Display weather={weather} />}
     </div>
   );
 }

@@ -1,17 +1,11 @@
-.display {
-  text-align: center;
-}
-.city {
-  color: #1d3557;
-  margin: 30px;
-  padding: 50px;
-}
 .weather {
-  color: #023e8a;
-}
-
-.cold {
-  color: #f4a261;
-  margin: 30px;
-  padding: 50px;
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  position: absolute;
+  text-align: right;
+  bottom: 40px;
+  right: 20vw;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.48);
 }

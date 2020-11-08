@@ -17,3 +17,11 @@ Build your MVP. Use branching and work on different components concurrently. Hav
 ## Task 4 - Stretch Goals (rest of the day)
 
 Have a quick chat about what you are going to build next. Break it down into tasks that you can work on and build it!
+
+## to do list
+
+- make input box see through 💚
+- make input work by pressing enter 💚
+- get rid of the button 💚
+- set background to: snow, rain, cloud, sun
+- set input to be focused (so when page loads, input is ready for client to type straight into it)
